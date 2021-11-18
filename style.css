@@ -1,0 +1,26 @@
+:root {
+    --white: #fff;
+    --neutral-100: #f8f9fa;
+    --neutral-200: #e8f0fe;
+    --neutral-300: #d2e3fc;
+    --neutral-400: #9aa0a6;
+    --neutral-500: #5f6368;
+    --neutral-800: #3c4043;
+    --neutral-900: #0B0B0B;
+    --primary-500: #F4F84D;
+    --primary-600: #F6FA2A;
+    --primary-700: #ECF012;
+
+    --wrapper:90rem /* 1440px */
+    --wrapper-padding: 1.5rem; /* 24 */
+    --breakpoint-main: 52.5rem; /* 840 */
+}
+
+
+html{
+        font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--neutral-900);
+}
