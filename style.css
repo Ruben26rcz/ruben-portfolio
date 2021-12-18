@@ -191,9 +191,20 @@ button * {
     --primary-700: #ECF012;
 
 
-    --wrapper:90rem /* 1440px */
-    --wrapper-padding: 1.5rem; /* 24 */
     --breakpoint-main: 52.5rem; /* 840 */
+    --wrapper:55rem; /* 880px */
+    --wrapper-padding: 1rem; /* 24 */
+}
+
+@font-face {
+    font-family: TexasLED;
+    src: url('./TEXASLED.TTF');
+} 
+.texasled {
+    font-family: TexasLED;
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
 }
 
 /* *************************************************************** */
@@ -201,8 +212,8 @@ button * {
 /* *************************************************************** */
 
 html{
-        font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-        color:var(--white);
+    font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+    color:var(--white);
 
 }
 
@@ -210,8 +221,44 @@ body{
     background-color: var(--neutral-900);
 }
 
-b,strong{
-    font-weight: bold;
+footer{
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 3.157rem;
+}
+
+h2 {
+    font-size: 2.369rem;
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 1.777rem;
+    line-height: 1.2;
+}
+
+.body-large{
+    font-size: 1.333rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.body-small{
+    font-size: 0.75rem;
+}
+
+b, strong {
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
 }
 
 /* *************************************************************** */
@@ -239,13 +286,13 @@ b,strong{
 }
 
 .header{
+    margin: 1rem 0;
     display: flex;
     justify-content: space-between;
 }
 
 .header a {
     color: var(--white);
-    text-decoration: none;
 }
 
 /* *************************************************************** */
@@ -260,16 +307,15 @@ b,strong{
 /*                               Main                              */
 /* *************************************************************** */
 
-.main {
-    margin-top: 3rem;
-}
+
 
 /* *************************************************************** */
 /*                      Intro                                      */
 /* *************************************************************** */
 
 .intro{
-    margin-bottom: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 /* *************************************************************** */
@@ -279,12 +325,23 @@ b,strong{
     display: inline-block;
 }
 
-.projects__project-card{
+.projects-cards__project-card{
     margin-bottom: 2rem;
 }
 
-.projects__project-card img{
+.projects-cards__project-card img{
+    width: 100%;
     border-radius: .5rem;
+}
+
+.project-card__text{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-card__title{
+    color: var(--primary-600);
 }
 
 /* *************************************************************** */
@@ -296,9 +353,8 @@ b,strong{
     border: none;
     display: inline-block;
     color: var(--white);
-    font-size: .75rem;
+    font-size: 1rem;
     padding: .75rem 1.25rem;
-    text-decoration: none;
     margin-top: 1rem;
 }
 
@@ -319,6 +375,13 @@ b,strong{
     height: 48px;
 }
 
+.main-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
 /* *************************************************************** */
 /*     Responsive: Desktop first (max-width) — hasta 599px         */
 /*                                                                 */
@@ -333,13 +396,24 @@ b,strong{
 }
 
 
+/* *************************************************************** */
+/*     Responsive: Tablet (min-width) — desde 600px                */
+/*                                                                 */
+/* *************************************************************** */
 
+@media (min-width: 37.5em){
 
+    .projects-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1.5rem;
+    }
+    .projects-cards__project-card {
+        margin-bottom: 0;
+    }
 
-
-
-
-
+}
 
 
 /* *************************************************************** */
@@ -350,7 +424,7 @@ b,strong{
 /*  estilos para pantallas mayores. */
 /* *************************************************************** */
 
-@media (min-width: 37.5em) {
+@media (min-width: 64em) {
     /* *************************************************************** */
     /*                               Main                              */
     /* *************************************************************** */

@@ -35,7 +35,7 @@
 
 <body>
 
-    <header class="header">
+    <header class="header wrapper">
         <div class="header-left">
             <div class="memoji">
                 <img class="memoji__image" src="./assets/Memoji_Ruben.png" alt="Memoji Ruben">
@@ -49,7 +49,6 @@
         <nav class="header__nav">
             <ul class="menu">
                 <li>
-                    <a class="menu__item" href="https://developers.google.com/products">Products</a>
                     <div class="menu__dropdown">
                         <ul>
                             <li>
@@ -65,16 +64,16 @@
     </header>
 
     <main class="main">
-        <section class="intro wrapper">
-            <div class="intro__location"> Barcelona </div>
-            <p class="intro__description"> Hello! I’m Rubén 👋
-                A UX/UI designer 💻 with a background in Industrial design 🔩
-                Currently pursuing my Master’s Degree in Digital Experiences Design at BAU 📚
+        <section class="intro wrapper wrapper-max">
+            <div class="intro__location body-small">📍 Barcelona </div>
+            <p class="intro__description"> Hello! I’m Rubén 👋 </br></br>
+                A <b>UX/UI designer</b> 💻 with a background in Industrial design 🔩</br></br>
+                Currently pursuing my Master’s Degree in Digital Experiences Design at BAU 📚</br></br>
                 On the side, I’m a casual chef 👨🏻‍🍳, gamer 🕹 and traveler ✈️
             </p>
         </section>
 
-        <section class="projects wrapper">
+        <section class="projects wrapper wrapper-max">
             <nav class="projects-menu">
                 <ul>
                     <li>
@@ -89,16 +88,75 @@
                 </ul>
             </nav>
 
-            <div class="projects__project-card">
-                <a class="project-card__image" href="">
-                    <img src="./assets/Project_Cover_1.jpg" alt="Insorvet Project">
-                </a>
-                <div class="project-card__title">
-                    Insorvet / Design Bla Bla
+            <div class="projects-cards">
+                <div class="projects-cards__project-card">
+                    <a href="">
+                        <img src="./assets/Project_Cover_1.jpg" alt="Insorvet Project">
+                    </a>
+                    <div class="project-card__text">
+                        <div class="project-card__title texasled">
+                            Travel Beyond
+                        </div>
+                        <div class="project-card_description">
+                            // Space Travel Landing
+                        </div>
+                    </div>
                 </div>
+
+                <div class="projects-cards__project-card">
+                    <a href="">
+                        <img src="./assets/Project_Cover_1.jpg" alt="Insorvet Project">
+                    </a>
+                    <div class="project-card__text">
+                        <div class="project-card__title texasled">
+                            Insorvet
+                        </div>
+                        <div class="project-card_description">
+                            // Veterinary E-commerce
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-cards__project-card">
+                    <a href="">
+                        <img src="./assets/Project_Cover_1.jpg" alt="Insorvet Project">
+                    </a>
+                    <div class="project-card__text">
+                        <div class="project-card__title texasled">
+                            Aventuralia
+                        </div>
+                        <div class="project-card_description">
+                            // Adventure Travels Web
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-cards__project-card">
+                    <a href="">
+                        <img src="./assets/Project_Cover_1.jpg" alt="Insorvet Project">
+                    </a>
+                    <div class="project-card__text">
+                        <div class="project-card__title texasled">
+                            3DelightBCN
+                        </div>
+                        <div class="project-card_description">
+                            // 3D Printing Web
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </section>
+
+        <footer class="wrapper">
+            <section class="main-footer">
+                <div> <a href="">Resume</a></div>
+                <div> <a href=""><img class="memoji" src="./assets/Memoji_Ruben.png" alt="Memoji Rubén"></a></div>
+                <div> <a href="https://www.linkedin.com/in/ruben-castillo-zambrana/" target="_blank">LinkedIn</a></div>
+            </section>
+            <p class="body-small">Coded by Rubén<br>2021 ©</p>
+        </footer>
     </main>
 
 </body>
