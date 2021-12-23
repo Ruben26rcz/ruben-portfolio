@@ -198,7 +198,7 @@ button * {
 
 @font-face {
     font-family: TexasLED;
-    src: url('./TEXASLED.TTF');
+    src: url('./assets/TEXASLED.TTF');
 } 
 .texasled {
     font-family: TexasLED;
@@ -322,7 +322,9 @@ a{
 /*                      Projects                                   */
 /* *************************************************************** */
 .projects-menu{
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
 }
 
 .projects-cards__project-card{
@@ -350,7 +352,8 @@ a{
 
 .button {
     background: none;
-    border: none;
+    border: 1px solid;
+    border-color: var(--neutral-900);
     display: inline-block;
     color: var(--white);
     font-size: 1rem;
