@@ -198,10 +198,13 @@ button * {
 
 @font-face {
     font-family: TexasLED;
-    src: url('./assets/TEXASLED.TTF');
+    src:
+    local("TexasLED"),
+    url('/assets/fonts/texasled-webfont.woff2') format("woff2");
+    font-display: swap;
 } 
 .texasled {
-    font-family: TexasLED;
+    font-family: "TexasLED", monospace;
     font-size: 1rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -382,7 +385,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin: 3rem 0 1.5rem 0;
 }
 
 /* *************************************************************** */
