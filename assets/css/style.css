@@ -186,14 +186,14 @@ button * {
     --neutral-500: #5f6368;
     --neutral-800: #3c4043;
     --neutral-900: #0B0B0B;
-    --primary-500: #F4F84D;
+    --primary-500: #F6FA2A;
     --primary-600: #F6FA2A;
     --primary-700: #ECF012;
 
-
-    --breakpoint-main: 52.5rem; /* 840 */
+    
+    --breakpoint-main: 52.5rem; /* 840px */
     --wrapper:55rem; /* 880px */
-    --wrapper-padding: 1rem; /* 24 */
+    --wrapper-padding: 1rem; /* 24px */
 }
 
 @font-face {
@@ -205,7 +205,7 @@ button * {
 } 
 .texasled {
     font-family: "TexasLED", monospace;
-    font-size: 1rem;
+    font-size: var(--body-medium);
     letter-spacing: 0.15em;
     text-transform: uppercase;
 }
@@ -242,6 +242,18 @@ h3 {
     line-height: 1.2;
 }
 
+.title-large{
+    font-size: 3.157rem;
+    font-weight: 700;
+}
+
+.title-medium{
+    font-size: 3.157rem;
+}
+.title-small{
+    font-size: 1.777rem;
+}
+
 .body-large{
     font-size: 1.333rem;
 }
@@ -251,8 +263,17 @@ p {
     line-height: 1.5;
 }
 
+.body-medium-bold{
+    font-weight: 700;
+}
+
 .body-small{
     font-size: 0.75rem;
+}
+
+.body-small-bold{
+    font-size: 0.75rem;
+    font-weight: 700;
 }
 
 b, strong {
@@ -386,6 +407,43 @@ a{
     justify-content: space-between;
     align-items: center;
     margin: 3rem 0 1.5rem 0;
+}
+
+/* *************************************************************** */
+/* *************************************************************** */
+/*                      CONTACT                                    */
+/* *************************************************************** */
+/* *************************************************************** */
+
+.boarding-pass__title{
+    height: 133px;
+    margin: 0 1rem 0 1rem;
+    padding: 0 1.5rem 0 1.5rem;
+    background-color: var(--primary-500);
+    border-radius: 1.5rem 1.5rem 0 0;
+    color: var(--neutral-900);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boarding-pass__content{
+    margin: 0 1rem 0 1rem;
+    padding: 1.5rem;
+    background-color: var(--white);
+    border-radius: 0 0 1.5rem 1.5rem;
+    color: var(--neutral-900);
+}
+.boarding-pass__info{
+    display: flex;
+    justify-content: space-between;
+}
+.skills{
+    margin-top: 2rem;
+}
+
+.skills__title{
+    margin-bottom: 1rem;
 }
 
 /* *************************************************************** */
