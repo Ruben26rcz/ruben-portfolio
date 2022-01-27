@@ -396,9 +396,11 @@ a{
     background-color: var(--primary-500);
     color: var(--neutral-900);
     border-radius: 15px;
+    height: 3rem;
     padding: .5rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 1.5rem;
 }
 
@@ -535,21 +537,28 @@ a{
 /* *************************************************************** */
 /* *************************************************************** */
 
-.project-hero{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
 
 .project-hero__title{
     margin-bottom: 1rem;
+}
+
+.project-hero__content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-hero__image{
     margin-top: 1.5rem;
 }
 
-
+.topic-title{
+    margin-bottom: .5rem;
+}
+.project-content__topic{
+    margin-top: 3rem;
+}
 
 
 /* *************************************************************** */
@@ -634,8 +643,16 @@ a{
 
     
     /* *************************************************************** */
-    /*                               Menu                              */
+    /*                               Project                           */
     /* *************************************************************** */
+
+    .project-hero__content{
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 
