@@ -418,14 +418,8 @@ a {
 /*                      Others                                     */
 /* *************************************************************** */
 
-<<<<<<< Updated upstream
-.memoji {
-  width: 40px;
-  height: 48px;
-=======
 .memoji{
     width: 56px;
->>>>>>> Stashed changes
 }
 
 .main-footer {
@@ -641,11 +635,6 @@ a {
     gap: 1rem;
   }
 
-<<<<<<< Updated upstream
-  .flip-letters img {
-    height: 88px;
-  }
-=======
     html{
         font-size: 1.25rem;
     }
@@ -708,7 +697,6 @@ a {
     /* *************************************************************** */
     /*                               Project                           */
     /* *************************************************************** */
->>>>>>> Stashed changes
 
   .boarding-pass__title {
     padding: 2rem 5rem 1.5rem 5rem;
