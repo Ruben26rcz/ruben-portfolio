@@ -296,7 +296,7 @@ a {
 /* *************************************************************** */
 
 .header {
-  margin: 1rem 0 6rem 0;
+  margin: 1rem 0 4rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -358,9 +358,11 @@ a {
   margin-bottom: 2rem;
 }
 
+.cover-container{
+
+}
 .project-card__image {
-  margin: auto;
-  min-width: 100%;
+
 }
 
 .project-card__text {
@@ -383,7 +385,7 @@ a {
   color: var(--neutral-900);
   border-radius: 15px;
   height: 3rem;
-  padding: 0.5rem;
+  padding: .5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -397,7 +399,7 @@ a {
   display: inline-block;
   color: var(--white);
   font-size: 1rem;
-  padding: 0.75rem 1.25rem;
+  padding: .75rem 1.25rem;
   margin-top: 1rem;
 }
 
@@ -440,7 +442,7 @@ a {
 /* *************************************************************** */
 
 .boarding-pass__title {
-  margin: 0 1rem 0 1rem;
+  margin: 0 1rem;
   padding: 2rem 1.5rem 1.5rem 1.5rem;
   background-color: var(--primary-500);
   border-radius: 1.5rem 1.5rem 0 0;
@@ -537,7 +539,7 @@ a {
 
 .content__card-hobbie{
   background-color: var(--neutral-800);
-  padding: 3rem 1.5rem 3rem 1.5rem;
+  padding: 3rem 1.5rem;
   border-radius: 0 0 1rem 1rem;
 }
 /* *************************************************************** */
@@ -555,7 +557,7 @@ a {
 }
 
 .topic-title {
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
 }
 .project-content__topic {
   margin-top: 3rem;
