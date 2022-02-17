@@ -216,20 +216,19 @@ html {
   line-height: 1.75;
   font-weight: 400;
   color: var(--white);
+  overflow-x: hidden;
 }
 
-body {
-  background-color: var(--neutral-900);
-}
+body {background-color:var(--neutral-900);
+overflow-x: hidden;}
 
-footer {
-  margin-bottom: 1.5rem;
-}
+footer {margin-bottom: 1.5rem;}
 
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
   line-height: 1.3;
 }
+
 h1 {
   font-size: 3.157rem;
   font-weight: 700;
@@ -251,9 +250,8 @@ h3 {
   font-weight: 700;
 }
 
-.title-medium {
-  font-size: 3.157rem;
-}
+.title-medium {font-size: 3.157rem;}
+
 .title-small {
   font-size: 1.777rem;
   font-weight: 700;
@@ -269,15 +267,10 @@ p {
   margin-bottom: 1rem;
 }
 
-.body-small {
-  font-size: .75rem;
-}
+.body-small {font-size: .75rem;}
 
 
-b,
-strong {
-  font-weight: 700;
-}
+b, strong {font-weight: 700;}
 
 a {
   text-decoration: none;
@@ -304,15 +297,13 @@ a {
 /* *************************************************************** */
 
 .header {
-  margin: 1rem 0 4rem 0;
+  padding: 1rem 0 4rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.memoji-video{
-  max-height: 136px;
-}
+.memoji-video{height: 136px;}
 
 /* *************************************************************** */
 /*                               Menu                              */
@@ -548,13 +539,14 @@ a {
 
 .title__card-hobbie{
   background-color: var(--neutral-500);
-  padding: 1.5rem 1rem 1.5rem 1rem;
+  padding: 1.5rem;
   border-radius: 1rem 1rem 0 0;
+  text-align: center;
 }
 
 .content__card-hobbie{
   background-color: var(--neutral-800);
-  padding: 3rem 1.5rem;
+  padding: 1rem 1.5rem;
   border-radius: 0 0 1rem 1rem;
 }
 /* *************************************************************** */
@@ -598,6 +590,15 @@ a {
     height: 66px;
     margin-left: -2rem;
   }
+
+  .cards-hobbies{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .content__card-hobbie {min-height: 176px;}
 }
 
 /* *************************************************************** */
@@ -627,16 +628,23 @@ a {
 
   .body-small {font-size: 0.707rem;}
 
-  .body-small-bold {font-size: 0.707rem;  }
+  .body-small-bold {font-size: 0.707rem;}
+
+  .main {margin-top: 3rem;}
+
+  .hamburger {display: none;}
+
+  .menu {
+    display: flex;
+    gap: 3.5rem;
+  }
 
   .menu__desktop {
     display: flex;
     gap: 1rem;
   }
 
-  .flip-letters img{
-    height: 88px;
-  }
+  .flip-letters img{height: 88px;}
 
   .boarding-pass__title {
     padding: 2rem 5rem 1.5rem 5rem;
@@ -649,12 +657,14 @@ a {
     gap: 2rem;
   }
 
+  .content__card-hobbie {height: 176px;}
+
   .card-hobbie{
     margin-bottom: 0rem;
   }
 
   .memoji-video{
-    height: 200px;
+    height: 208px;
   }
 }
 
@@ -674,7 +684,7 @@ a {
     height: calc(100vh - 5rem);
     position: absolute;
     right: -100%;
-    top: 5rem;
+    top: 6rem;
     padding-left: 3rem;
     transition: right 0.5s ease-in-out;
     will-change: right;
@@ -709,35 +719,9 @@ a {
     right: 0;
   }
 
-  .menu-open main {
+  .menu-open main,
+  .menu-open .memoji-video {
     filter: blur(5px);
   }
 
-  .header {
-    position: relative;
-    z-index: 9;
-  }
-}
-
-@media (min-width: 64em) {
-  /* *************************************************************** */
-  /*                               Main                              */
-  /* *************************************************************** */
-
-  .main {
-    margin-top: 3rem;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  .menu {
-    display: flex;
-    gap: 3.5rem;
-  }
-
-  /* *************************************************************** */
-  /*                             Menu                                */
-  /* *************************************************************** */
 }
