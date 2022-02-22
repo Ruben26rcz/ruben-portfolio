@@ -36,23 +36,27 @@
 <body>
 
     <header class="header wrapper">
-        <div class="memoji">
-            <img class="memoji__image" src="/assets/img/Memoji_Ruben.png" alt="Memoji Ruben">
+        <div>
+            <a href=""><video class="memoji-video" src="/assets/video/Memoji_Ruben_video.mp4" autoplay
+                    muted></video></a>
         </div>
         <div>
-            <nav class="header__nav wrapper">
-                <ul class="menu body-large">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <img class="hamburger" src="/assets/img/Vector.svg" alt="Hamburger Menu">
+            <nav>
+                <div class="menu body-large">
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                    <img class="hamburger-cross js-menu" src="/assets/img/cross-icon.svg" alt="Close Menu">
+                </div>
+                <img class="hamburger-cross js-menu" src="/assets/img/hamburger-icon.svg" alt="Hamburger Menu">
             </nav>
         </div>
     </header>
 
     <main class="main">
-        <section class="project-hero wrapper wrapper-max">
+        <section class="wrapper wrapper-max">
             <div class="project-hero__content">
                 <h1 class="project-hero__title">TRAVEL BEYOND</h1>
                 <h2 class="project-hero__subtitle">A landing page for a space travel company</h2>
@@ -61,7 +65,7 @@
             <a class="primary-button" href="">Go to prototype</a>
         </section>
 
-        <section class="project-content wrapper wrapper-max">
+        <section class="section wrapper wrapper-max">
             <div class="project-content__topic">
                 <h3 class="topic-title">✍️ From content to design </h3>
                 <p>Content defines design. The aim of this project was to design the UI of a landing page departing from
@@ -83,11 +87,15 @@
         <footer class="wrapper">
             <section class="main-footer">
                 <div> <a href="/assets/documents/CV Rubén Castillo UX-UI.pdf" target="_blank">Resume</a></div>
-                <div> <a href=""><img class="memoji" src="/assets/img/Memoji_Ruben.png" alt="Memoji Rubén"></a></div>
                 <div> <a href="https://www.linkedin.com/in/ruben-castillo-zambrana/" target="_blank">LinkedIn</a></div>
             </section>
-            <p class="body-small">Coded by Rubén<br>2021 ©</p>
+            <p class="body-small footer-text">Coded by Rubén<br>2021 ©</p>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="/assets/js/app.js"></script>
+
     </main>
 
 </body>
