@@ -8,7 +8,7 @@
     <title>Rubén Castillo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assets/favicons/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/favicons/apple-touch-icon-114x114.png" />
@@ -56,10 +56,18 @@
     </header>
 
     <main class="main">
-        <section class="wrapper wrapper-max">
+        <section class="section wrapper wrapper-max">
             <div class="project-hero__content">
-                <h1 class="project-hero__title">TRAVEL BEYOND</h1>
-                <h2 class="project-hero__subtitle">A landing page for a space travel company</h2>
+                <div>
+                    <a href="/index.html">
+                        <div class="return">
+                            <img style="transform: rotate(180deg);" src="/assets/img/TexasLED_arrow.svg" alt="Arrow">
+                            Return to projects
+                        </div>
+                        <h1 class="project-hero__title">TRAVEL BEYOND</h1>
+                        <h2 class="project-hero__subtitle">A landing page for a space travel company</h2>
+                    </a>
+                </div>
                 <img class="project-hero__image" src="/assets/img/Travel Beyond Cover.jpg" alt="">
             </div>
             <a class="primary-button" href="">Go to prototype</a>
@@ -67,7 +75,7 @@
 
         <section class="section wrapper wrapper-max">
             <div class="project-content__topic">
-                <h3 class="topic-title">✍️ From content to design </h3>
+                <h3 class="topic-title"><b>✍️ From content to design</b></h3>
                 <p>Content defines design. The aim of this project was to design the UI of a landing page departing from
                     the content. Usually designers fall in the temptation to use Lorem xipsum default texts. This ends
                     up
@@ -75,12 +83,12 @@
                 </p>
             </div>
             <div class="project-content__topic">
-                <h3 class="topic-title">📱 Mobile First & Responsive</h3>
+                <h3 class="topic-title"><b>📱 Mobile First & Responsive</b></h3>
                 <p>Sometimes when we make a desktop UI we end up making impossible designs for smaller devices. This
                     project was developed first in mobile to prevent future headaches trying to fit all the nice and
                     lovely content from desktop into mobile.
                 </p>
-                <img src="/assets/img/Travel_beyond_resposive.png" alt="Mockup all devices">
+                <img class="topic-image" src="/assets/img/responsive-travel-beyond.jpg" alt="Mockup all devices">
             </div>
         </section>
 
@@ -93,7 +101,7 @@
         </footer>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="/assets/js/app.js"></script>
 
     </main>
