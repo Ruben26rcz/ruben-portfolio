@@ -36,82 +36,91 @@
 <body>
 
     <header class="header wrapper">
-        <div class="memoji">
-            <img class="memoji__image" src="/assets/img/Memoji_Ruben.png" alt="Memoji Ruben">
+        <div>
+            <a href=""><video class="memoji-video" src="/assets/video/Memoji_Ruben_video.mp4" autoplay
+                    muted></video></a>
         </div>
         <div>
-            <nav class="header__nav wrapper">
-                <ul class="menu body-large">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a class="active" href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <img class="hamburger" src="/assets/img/Vector.svg" alt="Hamburger Menu">
+            <nav>
+                <div class="menu body-large">
+                    <ul>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <img class="hamburger-cross js-menu" src="/assets/img/cross-icon.svg" alt="Close Menu">
+                </div>
+                <img class="hamburger-cross js-menu" src="/assets/img/hamburger-icon.svg" alt="Hamburger Menu">
             </nav>
         </div>
     </header>
 
     <main class="main">
-        <section class="about wrapper wrapper-max">
-            <div class="road">
-                <img src="/assets/img/Road.png" alt="">
-            </div>
-            <div class="about__content">
-                <div class="about__section">
-                    <div class="texasled">
-                        Education
-                    </div>
-                    <div class="education__section">
-                        <div class="body-medium-bold">
-                            Master’s Degree in CX, UCD & UX/UI
-                        </div>
-                        BAU - Design College of Barcelona
-                    </div>
-                    <div class="education__section">
-                        <div class="body-medium-bold">
-                            Engineering Industrial Design Degree
-                        </div>
-                        ELISAVA - Pompeu Fabra
-                    </div>
-                </div>
-                <div class="about__section">
-                    <div class="texasled">
-                        Experience
-                    </div>
-                    <div class="education__section">
-                        <div class="body-medium-bold">
-                            Product Engineer and Web Designer
-                        </div>
-                        Insorvet
-                    </div>
-                    <div class="education__csection">
-                        <div class="body-medium-bold">
-                            Industrial Designer Junior
-                        </div>
-                        Vallfirest Forestry Technologies
-                    </div>
-                    <div class="education__csection">
-                        <div class="body-medium-bold">
-                            Interior Design Intern
-                        </div>
-                        Marina Bacelona 92 S.A.
-                    </div>
-                </div>
-                <div class="about__section">
-                    <div class="texasled">
-                        Additional Info
-                    </div>
-                    <div class="education__section">
-                        <div class="body-medium-bold">
-                            3D Print Service Worldwide
-                        </div>
-                        3DelightBCN
-                    </div>
-                </div>
+        <section class="section wrapper wrapper-max">
+            <div class="title-section title-small">🤙 Hey, nice to meet you!</div>
+            <div>
+                <img src="" alt="">
+                <p>I think, craft, and play between technology and design. As a curious designer I'm looking for new challenges in order to learn more about myself inside the user experience world.
+                    Coming from an Industrial Design background gave me the opportunity to fill my toolbox with Human Centric design methodologies that came in handy when transitioning towards Product Design. I enjoy being involved in the full process of design from research to coding.
+                </p>
+                <p>Check my <a href="">Resume</a> or <a href="">LinkedIn</a></p>
             </div>
         </section>
 
-        <section class="hobbies wrapper wrapper-max">
+        <section class="section wrapper wrapper-max">
+            <div class="section__title title-small ">What about my career?</div>            
+            <div>
+                <div class="education-experience">
+                    <div class="career__section">
+                        <div class="career__section__title texasled body-large">
+                            Education
+                        </div>
+                        <ul>
+                            <li>
+                                <b>Master's Degree in CX, UCD & UX/UI</b><br>
+                                BAU - Design College of Barcelona
+                            </li>
+                            <li>
+                                <b>Engineering Industrial Design Degree</b><br>
+                                ELISAVA - Pompeu Fabra 
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="career__section">
+                        <div class="career__section__title texasled body-large">
+                            Experience
+                        </div>
+                        <ul>
+                            <li>
+                                <b>Product Engineer and Web Designer</b><br>
+                                Insorvet
+                            </li>
+                            <li>
+                                <b>Industrial Designer Junior</b><br>
+                                Vallfirest Forestry Technologies 
+                            </li>
+                            <li>
+                                <b>Interior Design Intern</b><br>
+                                Marina Barcelona 92 S.A. 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="career__section">
+                    <div class="career__section__title texasled body-large">
+                        Additional Info
+                    </div>
+                    <ul>
+                        <li>
+                            <b>3D Print Service Wroldwide</b><br>
+                            3DelightBCN
+                        </li>
+                    </ul>
+                </div>
+        </section>
+
+        <section class="section wrapper wrapper-max">
             <p class="title-small">When I'm not in the digital world...</p>
             <div class="cards-hobbies">
                 <div class="card-hobbie">
@@ -155,10 +164,9 @@
         <footer class="wrapper">
             <section class="main-footer">
                 <div> <a href="/assets/documents/CV Rubén Castillo UX-UI.pdf" target="_blank">Resume</a></div>
-                <div> <a href=""><img class="memoji" src="/assets/img/Memoji_Ruben.png" alt="Memoji Rubén"></a></div>
                 <div> <a href="https://www.linkedin.com/in/ruben-castillo-zambrana/" target="_blank">LinkedIn</a></div>
             </section>
-            <p class="body-small">Coded by Rubén<br>2021 ©</p>
+            <p class="body-small footer-text">Coded by Rubén<br>2021 ©</p>
         </footer>
     </main>
 

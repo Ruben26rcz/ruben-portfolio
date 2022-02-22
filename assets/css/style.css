@@ -255,6 +255,7 @@ h3 {
 .title-small {
   font-size: 1.777rem;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .body-large {
@@ -277,6 +278,10 @@ a {
   color: var(--white);
 }
 
+.center{
+  text-align: center;
+}
+
 /* *************************************************************** */
 /*                          Wrapper                                */
 /* *************************************************************** */
@@ -297,21 +302,17 @@ a {
 /* *************************************************************** */
 
 .header {
-  padding: 1rem 0 4rem 0;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.memoji-video{height: 136px;}
+.memoji-video{height: 104px;}
 
 /* *************************************************************** */
 /*                               Menu                              */
 /* *************************************************************** */
-
-.header__nav {
-  display: flex;
-}
 
 .menu a:hover {
   color: var(--primary-500);
@@ -327,8 +328,7 @@ a {
 /* *************************************************************** */
 
 .intro {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin: 3rem 0 5rem 0;
 }
 
 .intro-hero {
@@ -426,10 +426,6 @@ a {
 /*                      Others                                     */
 /* *************************************************************** */
 
-.memoji{
-    width: 56px;
-}
-
 .main-footer {
   display: flex;
   justify-content: space-between;
@@ -439,6 +435,11 @@ a {
 
 .footer-text{
     text-align: center;
+}
+
+.section{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* *************************************************************** */
@@ -520,13 +521,14 @@ a {
 /* *************************************************************** */
 /* *************************************************************** */
 
-.about {
-  display: flex;
-  gap: 2rem;
+.career__section li{
+  margin-bottom: 1rem;
 }
-
-.about__section {
-  margin-bottom: 2rem;
+.career__section__title{
+  margin-bottom: 1rem;
+}
+.career__section{
+  margin-bottom: 3.5rem;
 }
 
 .cards-hobbies{
@@ -634,15 +636,18 @@ a {
 
   .hamburger {display: none;}
 
-  .menu {
-    display: flex;
-    gap: 3.5rem;
+  .hamburger-cross{
+    display: none;
   }
 
-  .menu__desktop {
+  .menu ul{
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
   }
+
+  .memoji-video {
+    height: 200px;
+}
 
   .flip-letters img{height: 88px;}
 
@@ -666,6 +671,15 @@ a {
   .memoji-video{
     height: 208px;
   }
+
+  .education-experience{
+    display: flex;
+    justify-content: space-between;
+  }
+  .career__section{
+    margin-bottom: 0;
+  }
+
 }
 
 /* *************************************************************** */
@@ -678,17 +692,22 @@ a {
 
 @media (max-width: 63.9375em) {
   .menu {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     background-color: var(--neutral-900);
     width: 55%;
-    height: calc(100vh - 5rem);
+    height:100vh;
     position: absolute;
+    top: 0;
     right: -100%;
-    top: 6rem;
+    padding: 3.5rem 1rem 0 0;
     padding-left: 3rem;
     transition: right 0.5s ease-in-out;
     will-change: right;
     z-index: 9;
+  }
+  .hamburger-cross{
+    height: 2rem;
   }
 
   .menu-open body {
