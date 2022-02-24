@@ -187,8 +187,8 @@ button * {
   --neutral-800: #1F1F1F;
   --neutral-900: #0b0b0b;
   --primary-500: #f6fa2a;
-  --primary-600: #f6fa2a;
-  --primary-700: #ecf012;
+  --primary-600: #F5F87C;
+  --primary-700: #D2D627;
 
   --breakpoint-main: 52.5rem; /* 840px */
   --wrapper: 55rem; /* 880px */
@@ -257,10 +257,6 @@ h3 {
   font-weight: 700;
   margin-bottom: 1rem;
 }
-.title-small_emoji{
-  display: inline-block;
-  height: 1.75rem;
-}
 
 .body-large {
   font-size: 1.333rem;
@@ -286,6 +282,9 @@ a {
   text-align: center;
 }
 
+.primary-500{
+  color: var(--primary-500);
+}
 
 
 /* *************************************************************** */
@@ -374,7 +373,6 @@ a {
 }
 
 .project-card__title {
-  color: var(--primary-600);
   font-size: 1.777rem;
 }
 .arrow-icon{
@@ -397,23 +395,8 @@ a {
   margin-top: 1.5rem;
 }
 
-.button {
-  background: none;
-  border: 1px solid;
-  border-color: var(--neutral-900);
-  display: inline-block;
-  color: var(--white);
-  font-size: 1rem;
-  padding: .75rem 1.25rem;
-  margin-top: 1rem;
-}
-
-.button:hover {
-  background: none;
-  border: 1px solid;
-  border-radius: 16px;
-  border-color: var(--primary-500);
-  color: var(--white);
+.primary-button:hover {
+  background-color: var(--primary-700);
 }
 
 .active {
@@ -562,7 +545,6 @@ a {
 /* *************************************************************** */
 /* *************************************************************** */
 .return{
-  color: var(--primary-500);
   display: flex;
   gap: .25rem;
 }
@@ -596,11 +578,11 @@ a {
 }
 
 /* *************************************************************** */
-/*     Responsive: Tablet (min-width) — desde 600px                */
+/*     Responsive: Tablet (min-width) — desde 740px                */
 /*                                                                 */
 /* *************************************************************** */
 
-@media (min-width: 37.5em) {
+@media (min-width: 45rem) {
   .projects-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -629,13 +611,13 @@ a {
 }
 
 /* *************************************************************** */
-/*     Responsive: Desktop first    (max-width) — hasta 599px      */
+/*     Responsive: Desktop first    (min-width) — desde 1024px     */
 /*                                                                 */
 /*  Útil para estilar el menú solo para móvil. De esta manera no   */
 /*  tenemos que sobre-escribir todos los estilos para desktop.     */
 /* *************************************************************** */
 
-@media (min-width: 64em) {
+@media (min-width: 64rem) {
 
   html {font-size: 125%;} /*20px*/
 
@@ -686,6 +668,12 @@ a {
 
   .flip-letters img{height: 88px;}
 
+  .primary-button {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .boarding-pass__title {
     padding: 1rem 1.5rem 1.5rem 1.5rem;
   }
@@ -727,14 +715,14 @@ a {
 }
 
 /* *************************************************************** */
-/*     Responsive: Mobile first (min-width) — desde 600px          */
+/*     Responsive: Mobile first (max-width) — hasta 1023px         */
 /*                                                                 */
 /*  Es la opción recomendada para el resto de elementos. Por       */
 /*  defecto los estilaremos como móvil, e iremos modificando sus   */
 /*  estilos para pantallas mayores. */
 /* *************************************************************** */
 
-@media (max-width: 63.9375em) {
+@media (max-width: 63.9375rem) {
   .menu {
     background-color: var(--neutral-900);
     width: 55%;
