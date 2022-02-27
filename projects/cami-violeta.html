@@ -37,13 +37,27 @@
 
     <header class="header wrapper">
         <div>
-            <a href="/index.html"><video class="memoji-video" src="/assets/video/Memoji_Ruben_video.mp4" autoplay
-                    muted></video></a>
+            <a href="/index.html">
+                <video class="memoji-video mobile-video" autoplay muted alt="Memoji of ruben moving">
+                    <source 
+                     src="/assets/video/Memoji_Ruben_video.mp4" 
+                     type='video/mp4'>
+                </video>
+                <video class="memoji-video desktop-video" autoplay muted alt="Memoji of ruben moving">
+                   <source 
+                    src="/assets/video/Memoji_Ruben.mov" 
+                    type='video/mp4; codecs="hvc1"'>
+                  <source 
+                    src="/assets/video/Memoji_Ruben.webm" 
+                    type="video/webm">
+                    Memoji of ruben moving
+                </video>
+            </a>
         </div>
         <nav>
             <div class="menu body-large">
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
+                    <li><a class="active" href="/index.html">Home</a></li>
                     <li><a href="/about.html">About</a></li>
                     <li><a href="/contact.html">Contact</a></li>
                 </ul>
@@ -53,7 +67,7 @@
             </div>
             <svg class="menu-icon js-menu" width="32" height="32" viewBox="0 0 32 32" fill="white" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.07143 7.77551H29.9286C30.5203 7.77551 31 7.30041 31 6.71429V4.06122C31 3.4751 30.5203 3 29.9286 3H2.07143C1.47967 3 1 3.4751 1 4.06122V6.71429C1 7.30041 1.47967 7.77551 2.07143 7.77551ZM2.07143 18.3878H29.9286C30.5203 18.3878 31 17.9127 31 17.3265V14.6735C31 14.0873 30.5203 13.6122 29.9286 13.6122H2.07143C1.47967 13.6122 1 14.0873 1 14.6735V17.3265C1 17.9127 1.47967 18.3878 2.07143 18.3878ZM2.07143 29H29.9286C30.5203 29 31 28.5249 31 27.9388V25.2857C31 24.6996 30.5203 24.2245 29.9286 24.2245H2.07143C1.47967 24.2245 1 24.6996 1 25.2857V27.9388C1 28.5249 1.47967 29 2.07143 29Z" fill="white"/>
-            </svg>      
+            </svg>                
         </nav>
     </header>
 
@@ -63,7 +77,10 @@
                 <div>
                     <a href="/index.html">
                         <div class="return">
-                            <img src="/assets/img/TexasLED_arrow--white.svg" alt="Arrow icon">
+                            <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.6445 11L18.1185 11L18.1185 13L20.6445 13L20.6445 11ZM23.763 11L21.237 11L21.237 13L23.763 13L23.763 11ZM26.8815 11L24.3555 11L24.3555 13L26.8815 13L26.8815 11ZM30 11L27.474 11L27.474 13L30 13L30 11ZM17.526 11L15 11L15 13L17.526 13L17.526 11Z" fill="currentColor"/>
+                                <path d="M2 13.1788L2 10.8212L4.88026 10.8212L4.88026 13.1788L2 13.1788ZM9.11974 7.35759L9.11974 5L12 5L12 7.35759L9.11974 7.35759ZM9.11974 19L9.11974 16.6424L12 16.6424L12 19L9.11974 19ZM5.55987 16.0894L5.55987 13.7318L8.44013 13.7318L8.44013 16.0894L5.55987 16.0894ZM5.55987 10.2682L5.55987 7.9106L8.44013 7.9106L8.44013 10.2682L5.55987 10.2682Z" fill="currentColor"/>
+                            </svg>                                
                             Return to projects
                         </div>
                         <h1 class="project-hero__title">CAMÍ VIOLETA</h1>
@@ -71,7 +88,7 @@
                             stop sexual harassment</h2>
                     </a>
                 </div>
-                <img class="project-hero__image" src="/assets/img/cami-violeta.jpg" alt="Cami Violeta Hero Image">
+                <img class="project-hero__image" src="/assets/img/cami-violeta-cover.jpg" alt="Cami Violeta Hero Image">
             </div>
             <a class="primary-button"
                 href="https://www.figma.com/proto/lbfYyswJZ5UijtVYXdXAXg/Human-CTA?page-id=106%3A8&node-id=106%3A14&viewport=359%2C48%2C0.21&scaling=min-zoom&starting-point-node-id=106%3A14&show-proto-sidebar=1"

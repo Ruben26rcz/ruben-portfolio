@@ -311,6 +311,10 @@ a {
 
 .memoji-video{height: 104px;}
 
+.desktop-video{
+  display: none;
+}
+
 /* *************************************************************** */
 /*                               Menu                              */
 /* *************************************************************** */
@@ -550,6 +554,7 @@ a {
 .return{
   display: flex;
   gap: .25rem;
+  align-items: center;
 }
 
 .project-hero__title {
@@ -665,7 +670,14 @@ a {
 
   .memoji-video {
     height: 200px;
-}
+  }
+
+  .mobile-video{
+    display: none;
+  }
+  .desktop-video{
+    display: block;
+  }
 
   .flip-letters img{height: 88px;}
 
