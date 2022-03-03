@@ -204,6 +204,7 @@ button * {
   font-family: 'TexasLED', monospace;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  font-weight: 400;
   color: var(--primary-500);
 }
 
@@ -347,7 +348,7 @@ a {
 }
 
 .hero {
-  margin-bottom: 3rem;
+  margin: 3rem auto;
 }
 
 .flip-letters img {
@@ -615,6 +616,10 @@ a {
   flex-direction: column;
   justify-content: center;
 }
+
+.memoji-error{
+  height: 8rem;
+}
 /* *************************************************************** */
 /*     Responsive: Tablet (min-width) — desde 740px                */
 /*                                                                 */
@@ -679,8 +684,6 @@ a {
   .desktop-hide{
     display: none;
   }
-
-  .main {margin-top: 3rem;}
 
   .header {
     display: flex;
@@ -762,6 +765,9 @@ a {
 
   .figma-desktop{
     height: 704px
+  }
+  .memoji-error{
+    height: auto;
   }
 }
 
