@@ -283,6 +283,11 @@ a {
   text-align: center;
 }
 
+.center-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mobile-hide{
   display: none;
 }
@@ -604,7 +609,12 @@ a {
 .project-content__topic {
   margin-bottom: 3rem;
 }
-
+.all-screen{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 /* *************************************************************** */
 /*     Responsive: Tablet (min-width) — desde 740px                */
 /*                                                                 */
@@ -753,7 +763,6 @@ a {
   .figma-desktop{
     height: 704px
   }
-
 }
 
 /* *************************************************************** */
