@@ -354,7 +354,15 @@ a {
 .flip-letters img {
   height: 42px;
   margin-left: -1rem;
+  max-width: none;
 }
+
+/*
+.js-intro__description{
+  margin-top: 80px;
+  opacity: 0;
+}
+*/
 
 /* *************************************************************** */
 /*                      Projects                                   */
@@ -380,6 +388,10 @@ a {
   object-fit: cover;
 }
 
+.project-card__text:hover{
+  text-shadow: 0 0 10px rgba(219, 255, 0, .8);
+}
+
 .project-card__text {
   padding-top: 1rem;
   display: flex;
@@ -389,9 +401,6 @@ a {
 
 .project-card__title {
   font-size: 1.777rem;
-}
-.arrow-icon{
-  height: 40px;
 }
 
 /* *************************************************************** */
@@ -436,6 +445,11 @@ a {
 /* *************************************************************** */
 /*                      Others                                     */
 /* *************************************************************** */
+
+hr{
+  border: 1px solid var(--neutral-800);
+  margin-bottom: 2rem;
+}
 
 .main-footer {
   display: flex;
