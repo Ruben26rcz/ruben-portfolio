@@ -383,7 +383,7 @@ a {
 }
 
 .project-card__image {
-  height: 358px;
+  height: 256px;
   width: 100%;
   object-fit: cover;
 }
@@ -401,6 +401,10 @@ a {
 
 .project-card__title {
   font-size: 1.777rem;
+}
+
+.working{
+  margin: 4rem auto;
 }
 
 /* *************************************************************** */
@@ -728,6 +732,8 @@ hr{
   }
 
   .flip-letters img{height: 88px;}
+
+  .project-card__image {height: 358px;}
 
   .primary-button {
     width: 50%;

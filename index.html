@@ -59,11 +59,13 @@
     <header class="header wrapper">
         <div>
             <a href="#top">
-                <video class="memoji-video" autoplay muted alt="Memoji of ruben moving">
+                <video class="memoji-video mobile-hide" autoplay muted alt="Memoji of ruben moving">
                     <source src="/assets/video/Memoji_Ruben.mov" type='video/mp4; codecs="hvc1"'>
                     <source src="/assets/video/Memoji_Ruben.webm" type="video/webm">
+                    <img src="./assets/img/memoji-ruben.png" alt="Memoji of Ruben">
                     Memoji of ruben moving
                 </video>
+                <img class="desktop-hide memoji-video" src="./assets/img/memoji-ruben.png" alt="Memoji of Ruben">
             </a>
         </div>
         <nav>
@@ -113,7 +115,7 @@
                     <a href="projects/travel-beyond.html">
                         <picture class="project-card__image">
                             <source srcset="./assets/img/travel-beyond-cover.webp" type="image/webp">
-                            <img class="project-card__image" src="./assets/img/Travel Beyond Cover.jpg"
+                            <img class="project-card__image" src="./assets/img/travel-beyond-cover.jpg"
                                 alt="Landing travel beyond displayed in a mobile">
                         </picture>
                         <div>
@@ -137,7 +139,32 @@
                         </div>
                     </a>
                 </div>
-
+                <div class="projects-cards__project-card">
+                    <a href="projects/moody-movie.html">
+                        <picture class="project-card__image">
+                            <source srcset="./assets/img/moody-movie-cover.webp" type="image/webp">
+                            <img class="project-card__image" src="./assets/img/moody-movie-cover.jpg"
+                                alt="Moody movie app screens">
+                        </picture>
+                        <div class="project-card__text">
+                            <div class="project-card__title texasled">
+                                Moody Movie
+                            </div>
+                            <svg class="arrow" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.3555 14H13.8815V12H11.3555V14ZM8.23701 14H10.763V12H8.23701V14ZM5.1185 14H7.64449V12H5.1185V14ZM2 14H4.52599V12H2V14ZM14.474 14H17V12H14.474V14Z"
+                                    fill="#F6FA2A" />
+                                <path
+                                    d="M30 11.8212V14.1788H27.1197V11.8212H30ZM22.8803 17.6424V20H20V17.6424H22.8803ZM22.8803 6V8.35759H20V6H22.8803ZM26.4401 8.9106V11.2682H23.5599V8.9106H26.4401ZM26.4401 14.7318V17.0894H23.5599V14.7318H26.4401Z"
+                                    fill="#F6FA2A" />
+                            </svg>
+                        </div>
+                        <div class="project-card_description">
+                            An app that matches your mood with a movie
+                        </div>
+                    </a>
+                </div>
                 <div class="projects-cards__project-card">
                     <a href="projects/insorvet.html">
                         <picture class="project-card__image">
@@ -191,7 +218,7 @@
                     </a>
                 </div>
 
-                <div class="projects-cards__project-card">
+                <!-- <div class="projects-cards__project-card">
                     <a href="projects/cami-violeta.html">
                         <picture class="project-card__image">
                             <source srcset="./assets/img/cami-violeta-cover.webp" type="image/webp">
@@ -216,7 +243,7 @@
                             A landing page for an app to stop sexual harassment
                         </div>
                     </a>
-                </div>
+                </div> -->
 
             </div>
         </section>

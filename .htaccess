@@ -1,1 +1,5 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !=443
+RewriteRule ^(.*)$ https://rubencastillodesign.com/$1 [R=301,L]
+
 ErrorDocument 404 /404page.html

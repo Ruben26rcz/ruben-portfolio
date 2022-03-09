@@ -61,11 +61,13 @@
     <header class="header wrapper">
         <div>
             <a href="/index.html">
-                <video class="memoji-video" autoplay muted alt="Memoji of ruben moving">
+                <video class="memoji-video mobile-hide" autoplay muted alt="Memoji of ruben moving">
                     <source src="/assets/video/Memoji_Ruben.mov" type='video/mp4; codecs="hvc1"'>
                     <source src="/assets/video/Memoji_Ruben.webm" type="video/webm">
+                    <img src="/assets/img/memoji-ruben.png" alt="Memoji of Ruben">
                     Memoji of ruben moving
                 </video>
+                <img class="desktop-hide memoji-video" src="/assets/img/memoji-ruben.png" alt="Memoji of Ruben">
             </a>
         </div>
         <nav>
@@ -143,7 +145,8 @@
             </div>            
         </section>
 
-        <footer class="wrapper">
+        <footer class="wrapper wrapper-max">
+            <hr>
             <section class="main-footer">
                 <div> <a href="/assets/documents/cv_ruben-castillo_ux-ui.pdf" target="_blank">Resume</a></div>
                 <div> <a href="https://www.linkedin.com/in/ruben-castillo-zambrana/" target="_blank">LinkedIn</a></div>
