@@ -499,18 +499,18 @@ hr{
 /*                      Animations                                 */
 /* *************************************************************** */
 
-.move {
-  animation:move .7s ease-in forwards;
+.move-fade-in {
+  animation:move-fade-in .7s ease-in forwards;
   margin-top: 4rem;
 }
 
 @keyframes move-fade-in {
-  from {
+  0% {
     opacity: 0;
-    transform: translateY(0);
+    transform: translateY(1rem);
   }
   
-  to {
+  100% {
     opacity: 1;
     transform: translateY(-1rem);
   }
