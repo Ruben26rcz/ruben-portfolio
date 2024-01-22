@@ -1,10 +1,3 @@
-/*$(document).ready(function () {
-  $('.js-menu').on('click', function () {
-    $('html').toggleClass('menu-open');
-  });
-});
-*/
-
 function onDocumentReady(callback) {
   const state = document.readyState;
   if (state === 'complete' || state === 'interactive') {
@@ -22,7 +15,6 @@ onDocumentReady(function () {
   triggers.forEach(function (trigger) {
     trigger.addEventListener('click', function () {
       document.documentElement.classList.toggle('menu-open');
-    })
-  })
-
+    });
+  });
 });
